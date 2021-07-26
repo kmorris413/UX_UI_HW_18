@@ -1,0 +1,60 @@
+body {
+    background: color #bfdbf7;
+}
+.nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:#1F7A8C;
+   padding: .5px;
+}
+
+.logo {
+    padding: 1%;
+}
+.center {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center a {
+    color:#E1E5F2;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.heroSection {
+    height: 500px;
+    padding: 150px;
+    text-align: center;
+}
+.picofMe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h1 {
+    color: #022B3A;
+    font-size: 40px;
+}
+p {
+    color: #022B3A;
+    font-size: 20px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F7A8C;
+    padding: 15px;
+}
+.footer a {
+    color: #E1E5F2;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
