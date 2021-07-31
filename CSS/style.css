@@ -42,19 +42,193 @@ h1 {
 }
 p {
     color: #022B3A;
-    font-size: 20px;
+    font-size: 18px;
 }
+
+.mtnPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* UX Skills Section*/
+.flexContainer {
+    display: flex;
+}
+.personaDev {
+    width: 33%;
+    margin: 3%;
+    padding: 5px;
+}
+.journeyMap {
+    width: 33%;
+    margin: 3%;
+    padding: 5px;
+}
+.userInterviewing {
+    width: 33%;
+    margin: 3%;
+    padding: 5px;
+}
+.personaInfo {
+    font-size: 18px;
+}
+.journeyInfo {
+    font-size: 18px;
+}
+.interviewInfo {
+    font-size: 18px;
+}
+
+/*UX Skills icon Images*/
+.personA {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.journeY {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.intervieW {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*My Work Section*/
+.workGrid {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "firstPic firstProject"
+        "secondPic secondProject"
+        ;
+}
+.firstPic {
+    grid-area: firstPic;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.firstProject {
+    grid-area: firstProject;
+    margin: auto;
+    padding-bottom: 50px;   
+}
+.secondPic {
+    grid-area: secondPic;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.secondProject {
+    grid-area: secondProject;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+h4 {
+    font-size: 22px;
+    padding-bottom: 25px;
+}
+.mesaDescription {
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+.unwindDescription {
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+button {
+    font-size: 12px;
+    background-color: #022B3A;
+    color: #C5AFA4;
+    width: 125px;
+    height: 35px;
+}
+.viewAll {
+    padding-bottom: 25px;
+}
+/*About Section*/
+.backgroundText {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.funfactsText {
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #1F7A8C;
     padding: 15px;
+    clear: both;
 }
 .footer a {
     color: #E1E5F2;
     padding: 10px;
     font-size: 14px;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        display: column;
+    }
+    .personaDev {
+        width: 100%;
+        margin: 3%;
+        padding: 5px;
+    }
+    .journeyMap {
+        width: 100%;
+        margin: 3%;
+        padding: 5px;
+    }
+    .userInterviewing {
+        width: 100%;
+        margin: 3%;
+        padding: 5px;
+    }
+
+    .workGrid {
+        display: grid;
+        grid-template-rows: 50% 50% 50% 50%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "firstPic"
+            "firstProject"
+            "secondPic"
+            "secondProject"
+            ;
+    }
+    .firstPic {
+        grid-area: firstPic;
+        padding-bottom: 0px;
+        padding-top: 0px; 
+    }
+    .firstProject {
+        grid-area: firstProject;
+        margin: none;
+        padding-bottom: 0px;   
+    }
+    .secondPic {
+        grid-area: secondPic;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .secondProject {
+        grid-area: secondProject;
+        margin: none;
+        padding-bottom: 0px;
+    }
 }
 
